@@ -1,0 +1,37 @@
+h1 {
+    font-size: 65px;
+    color:orange;
+}
+ul{
+    background-color: pink;
+}
+.corfundo{
+    background-color: beige;
+}
+h1 {
+    font-family: sans-serif;
+}
+p{
+    font-weight: 600;
+}
+body{
+    font-size: 16px;
+}
+p {
+    3em;
+}
+li{
+    font-style: unset;
+    line-height: 0in;
+    text-align: center;
+    text-decoration: overline;
+
+#amarelo{
+    background-color: yellow;
+}
+#vermelho{
+    background-color: red;
+}
+#marrom{
+    background-color: brown;
+}
