@@ -43,3 +43,32 @@ if (C > D && C > E) {
 } else {
     console.log ("O maior número é E");
 }
+
+// 4 // 
+
+const valor = -85;
+
+if (valor < 0) {
+    console.log ("Negative");
+}
+else if (valor > 0) {
+    console.log ("Positive");
+}   
+else {
+    console.log ("Zero");
+}
+
+// 5 //
+
+let lado1 = 60;
+let lado2 = 60;
+let lado3 = 60;
+
+if (lado1 > 0 && lado2 > 0 && lado3 > 0) {
+    console.log ("true")
+} else if (lado1 < 0 && lado2 < 0 && lado3 < 0) {
+    console.log ("false")
+} else {
+    console.log("ERROR");
+}
+
