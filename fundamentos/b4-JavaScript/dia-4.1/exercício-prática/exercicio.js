@@ -122,3 +122,23 @@ if (num1 % 2!==0 || num2 % 2!==0 | num3 % 2!==0) {
 } else {
   console.log("false");
 }
+
+//10
+const custoProduto = -1;
+const valorVenda = 3;
+const aliquotaImposto = 1.2;
+
+const impostoSobreOLucro = custoProduto * aliquotaImposto;
+const custoTotal = custoProduto + impostoSobreOLucro;
+constLucro = (valorVenda - custoTotal) * 1000;
+
+if (custoProduto >= 0 || valorVenda >=0){
+  console.log("lucro");
+} else {
+  console.log ("ERROR!");
+}
+
+
+
+
+
