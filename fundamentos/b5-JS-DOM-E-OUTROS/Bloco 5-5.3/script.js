@@ -127,21 +127,61 @@ displayFridays(decemberFridays);
 
 function dayMouseOver() {
   let days = document.querySelector("#days");
-  days.addEventListener('mouseover', function(event){
-    event.target.style.fontSize = '30px';
-    event.target.style.fontWeight = '600'; // ele pega o evento e altera o estilo de fontweight para 600
+  days.addEventListener("mouseover", function (event) {
+    event.target.style.fontSize = "30px";
+    event.target.style.fontWeight = "600"; // ele pega o evento e altera o estilo de fontweight para 600
   });
 }
 
 function dayMouseOut() {
   let days = document.querySelector("#days");
-  days.addEventListener('mouseout', function(event){
-    event.target.style.fontSize = '20px';
-    event.target.style.fontWeight = '200';
+  days.addEventListener("mouseout", function (event) {
+    event.target.style.fontSize = "20px";
+    event.target.style.fontWeight = "200";
   });
 }
 dayMouseOver();
 dayMouseOut();
 
 //7
+
+function newTaskSpan() {
+  let taskContainer = document.querySelector(".my-tasks");
+  let taskName = document.createElement("span");
+  taskName.innerText = "projeto";
+
+  taskContainer.appendChild(taskName);
+}
+newTaskSpan();
+
+//8
+function newTaskDiv(cor) {
+  let taskContainer = document.querySelector(".my-tasks");
+  let newTask = document.createElement("div");
+  newTask.class = "task";
+  newTask.style.backgroundColor = cor;
+
+  taskContainer.appendChild(newTask);
+}
+newTaskDiv("blue");
+
+//9
+
+function setTaskClass() {
+  let selectedTask = document.getElementsByClassName("task selected");
+  let myTasks = document.querySelector(".task");
+  myTasks.addEventListener("click", function (event) {
+    if (selectedTask.length === 0) {
+      event.target.className = "task selected";
+    } else {
+      event.target.className = "task";
+    }
+  });
+}
+setTaskClass();
+
+//10
+
+
+
 
