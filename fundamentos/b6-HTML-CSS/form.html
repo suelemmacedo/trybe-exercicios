@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trybe Trip</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css" />
+  </head>
+  <body class="p-3 mb-2 bg-secondary text-white">
+    <h1 class="text-center" class="h1">Trybe Trip</h1>
+    <form>
+     <fieldset>
+        <label class="form-label" for="'fullName"> Nome Completo: </label>
+        <input
+        class="input-group mb-3"
+          type="text"
+          id="nome-usuario"
+          placeholder="Digite seu nome completo"
+          name="fullName"
+          minlength="10"
+          maxlength="40"
+          required
+        />
+     </fieldset>
+        
+  
+      <br />
+      <br />
+      <label class="form-label" for="e-mail"> E-mail: </label>
+      <input
+        type="email"
+        class="input-group mb-3"
+        id="email-usuario"
+        placeholder="Digite seu e-mail"
+        minlength="10"
+        maxlength="50"
+        required
+      />
+      <br />
+      <br />
+      <input
+        type="radio"
+        id="destino1"
+        className="radios"
+        name="destinosPreferidos"
+        value="cidade"
+        required
+      />
+      <!--  radio refere-se a um elemento que é uma opção que pode ser marcada ou desmarcada, e possui como característica um pequeno círculo ao lado do texto. -->
+      <label class="form-label" for="destino1"> Cidade </label>
+
+      <input
+        type="radio"
+        id="destino2"
+        className="radios"
+        name="destinosPreferidos"
+        value="campo"
+        required
+      />
+      <label class="form-label" for="destino2"> Campo </label>
+      <input
+        type="radio"
+        id="destino3"
+        className="radios"
+        name="destinosPreferidos"
+        value="praia"
+        required
+      />
+      <label class="form-label" for="destino3"> Praia </label>
+      <input
+        type="radio"
+        id="destino4"
+        className="radios"
+        name="destinosPreferidos"
+        value="montanhas"
+        required
+      />
+      <label class="form-label" for="destino4"> Montanhas </label>
+      <br />
+      <br />
+
+      <label class="form-label" for="why" id="text-area">
+        Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+        TrypeTrip?
+      </label>
+      <br />
+      <br />
+      <textarea class="form-control" id="why" name="area-texto" maxlength="500">
+ Escreva aqui</textarea
+      >
+      <br />
+      <br />
+      <label class="form-label" for="date"> Qual a melhor dara para realizar a viagem? </label>
+      <input type="date" id="date" />
+      <br />
+      <br />
+
+      <input type="checkbox" name="promo" id="promo" class="form-check-input"/>
+      <label class="form-label" for="promo">
+        Gostaria de receber outras incríveis oportunidades oferecidas pela
+        Trybe?</label
+      >
+      <br />
+      <br />
+      <input class="form-check-input"type="checkbox" name="concordo" id="concordo" class="form-check-input" required />
+      <label class="form-label" for="concordo">
+        Concordo que imagens das minhas férias poderão ser usadas nos próximos
+        exercícios.
+      </label>
+      <br />
+      <br />
+      <button type="submit" class="btn btn-light" id="submit-btn">Enviar</button>
+      <button type="reset" class="btn btn-light" id="reset-btn">Limpar informações</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
