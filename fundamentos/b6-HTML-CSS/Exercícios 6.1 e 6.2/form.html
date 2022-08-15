@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trybe Trip</title>
+    <script src="pikaday.css" ></script>
+    <script src="node_modules/moment/moment.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css" />
+
   </head>
   <body class="p-3 mb-2 bg-secondary text-white">
     <h1 class="text-center" class="h1">Trybe Trip</h1>
@@ -93,7 +96,7 @@
       <br />
       <br />
       <label class="form-label" for="date"> Qual a melhor dara para realizar a viagem? </label>
-      <input type="date" id="date" />
+      <input type="text" id="date" />
       <br />
       <br />
 
@@ -111,7 +114,7 @@
       </label>
       <br />
       <br />
-      <button type="submit" class="btn btn-light" id="submit-btn">Enviar</button>
+      <button type="submit" class="btn btn-light" id="submit-btn" disabled>Enviar</button> <!-- disabled define que o botão está desabilitado -->
       <button type="reset" class="btn btn-light" id="reset-btn">Limpar informações</button>
     </form>
 
